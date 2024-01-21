@@ -114,6 +114,8 @@ alias ll="eza -a --icons --tree --level=1 --git --long"
 alias ls="eza -a --icons"
 alias lw="php artisan livewire:make"
 alias lwf="php artisan livewire:form"
+alias lg="lazygit"
+alias ylg="yadm enter lazygit"
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 
 function dcp() {
