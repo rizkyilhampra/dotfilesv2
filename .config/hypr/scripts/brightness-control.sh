@@ -19,6 +19,4 @@ d)  # decrease the backlight by 5%
     fi
     # send_notification ;;
     ;;
-*)  # print error
-    hyprctl seterror 'rgba(66ee66ff)' hello world this is my problem
 esac

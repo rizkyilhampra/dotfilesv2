@@ -94,62 +94,32 @@ source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 # else
 #   export EDITOR='mvim'
 # fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias nvimbak="~/.scripts/nvim-bak.sh"
-alias ar="php artisan"
-alias migrate="php artisan migrate:fresh --seed"
-alias update="sudo apt update && sudo apt upgrade -y"
-alias ll="eza -a --icons --tree --level=1 --git --long"
-alias ls="eza -a --icons"
-alias lw="php artisan livewire:make"
-alias lwf="php artisan livewire:form"
-alias lg="lazygit"
-alias ylg="yadm enter lazygit"
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-
-function dcp() {
-  # Mengecek apakah sudah ada autentikasi sudo sebelumnya dalam sesi yang sama
-  if sudo -n true 2>/dev/null; then
-    sudo ~/.scripts/discord-relay.sh &
-  else
-    echo "Password sudo diperlukan untuk menjalankan script ini."
-    sudo -v  # Meminta password sudo
-    sudo ~/.scripts/discord-relay.sh &
-  fi
-}
-
-#global env
 export EDITOR="nvim"
 
-#fnm
+#fnm (Node Package Manager)
 export PATH="/home/aquila/.local/share/fnm:$PATH"
 eval "$(fnm env --use-on-cd)"
 
 #composer
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
-#custom alias
-export PATH="$HOME/.aliasses:$PATH"
+#Neovim Package Manager
 export PATH="/home/aquila/.local/share/bob/nvim-bin/:$PATH"
 
 #plugin
 export PATH="$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH"
 
-export STARSHIP_CONFIG=~/starship.toml
-eval "$(starship init zsh)"
+export PATH=$PATH:/home/aquila/.spicetify
+
+source $HOME/.aliasses/aliasses.zsh
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
 
 eval "$(zoxide init zsh --cmd j)"
+export STARSHIP_CONFIG=~/starship.toml
+
+eval "$(starship init zsh)"
+
 pfetch
-#pokemon-colorscripts --no-title -r 1,3,6
-export PATH=$PATH:/home/aquila/.spicetify
+# pokemon-colorscripts --no-title -r 1,3,6
