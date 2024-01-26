@@ -111,7 +111,7 @@ export PATH="$HOME/.tmux/plugins/t-smart-tmux-session-manager/bin:$PATH"
 
 export PATH=$PATH:/home/aquila/.spicetify
 
-source $HOME/.aliasses/aliasses.zsh
+source $HOME/.aliasses.zsh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
