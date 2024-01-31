@@ -41,25 +41,4 @@ alias dss="sudo systemctl start docker"
 alias dst="sudo systemctl stop docker"
 alias dsr="sudo systemctl restart docker"
 
-function dockcomposer() {
-  local php_version="$1"
-
-  if [[ -z "$php_version" ]]; then
-    php_version="83"  # Set a default PHP version if not provided
-  fi
-
-  valid_versions=(80 81 82 83)
-  if [[ ! " ${valid_versions[@]} " =~ " ${php_version} " ]]; then
-    echo "Invalid PHP version: $php_version. Valid versions are: ${valid_versions[*]}"
-    return 1  # Exit with an error code
-  fi
-
-  docker run --rm \
-    -u "$(id -u):$(id -g)" \
-    -v "$(pwd):/var/www/html" \
-    -w /var/www/html \
-    "laravelsail/php${php_version}-composer:latest" \
-    composer install --ignore-platform-reqs
-}
-
 alias dc="docker-compose"
