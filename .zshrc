@@ -122,11 +122,6 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 eval "$(zoxide init zsh --cmd j)"
 export STARSHIP_CONFIG=~/starship.toml
 
-eval "$(starship init zsh)"
-
-pfetch
-# pokemon-colorscripts --no-title -r 1,3,6
-
 # Created by `pipx` on 2024-01-26 03:19:19
 export PATH="$PATH:/home/aquila/.local/bin"
 
@@ -136,3 +131,7 @@ export PATH="$PATH:/home/aquila/.local/bin"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+eval "$(starship init zsh)"
+pfetch
+# pokemon-colorscripts --no-title -r 1,3,6
