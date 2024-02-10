@@ -7,9 +7,6 @@
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias nvimbak="~/.scripts/nvim-bak.sh"
-
-#LARARAVEL ALIASSES
 alias a="php artisan"
 alias sa="./vendor/bin/sail artisan"
 alias s='[ -f sail ] && sh sail || sh vendor/bin/sail'
@@ -26,19 +23,13 @@ alias lg="lazygit"
 alias yadm="cd $HOME && yadm"
 alias ylg="yadm enter lazygit"
 
-function dcp() {
-  # Mengecek apakah sudah ada autentikasi sudo sebelumnya dalam sesi yang sama
-  if sudo -n true 2>/dev/null; then
-    sudo ~/.scripts/discord-relay.sh &
-  else
-    echo "Password sudo diperlukan untuk menjalankan script ini."
-    sudo -v  # Meminta password sudo
-    sudo ~/.scripts/discord-relay.sh &
-  fi
-}
-
 alias dss="sudo systemctl start docker"
 alias dst="sudo systemctl stop docker"
-alias dsr="sudo systemctl restart docker"
 
 alias dc="docker-compose"
+
+alias p="pnpm"
+alias pi="pnpm install"
+alias prd="pnpm run dev"
+
+alias v="nvim"
