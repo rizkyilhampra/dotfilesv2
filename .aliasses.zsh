@@ -28,8 +28,9 @@ alias dst="sudo systemctl stop docker"
 
 alias dc="docker-compose"
 
-alias p="pnpm"
 alias pi="pnpm install"
 alias prd="pnpm run dev"
 
 alias v="nvim"
+alias gone="~/.scripts/git-delete-untracked-branches.sh"
+alias zoraxy="sudo ~/zoraxy/src/zoraxy --port=:8001"
