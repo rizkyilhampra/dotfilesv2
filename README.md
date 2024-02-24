@@ -1,4 +1,4 @@
-# [Aquila's](https://github.com/rizkyilhampra) Dotfiles - Endeavour OS with Hyprland WM
+# [Aquila's](https://github.com/rizkyilhampra) Dotfiles - Hyprland WM
 
 | App | Description |
 | --- | --- |
