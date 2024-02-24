@@ -75,6 +75,7 @@ plugins=(
     zsh-autosuggestions 
     web-search 
     zsh-syntax-highlighting
+    zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
