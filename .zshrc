@@ -132,5 +132,7 @@ export PATH="$PATH:/home/aquila/.local/bin"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
+
 eval "$(starship init zsh)"
 pfetch
