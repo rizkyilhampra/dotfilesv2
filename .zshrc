@@ -75,7 +75,6 @@ plugins=(
     zsh-autosuggestions 
     web-search 
     zsh-syntax-highlighting
-    zsh-vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -135,4 +134,3 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 eval "$(starship init zsh)"
 pfetch
-# pokemon-colorscripts --no-title -r 1,3,6
