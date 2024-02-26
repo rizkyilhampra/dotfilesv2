@@ -20,6 +20,7 @@ alias ls="eza -a --icons"
 alias cat='bat'
 
 alias lg="lazygit"
+alias ld="lazydocker"
 alias yadm="cd $HOME && yadm"
 alias ylg="yadm enter lazygit"
 
