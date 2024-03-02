@@ -7,20 +7,21 @@
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias a="php artisan"
-alias sa="./vendor/bin/sail artisan"
 alias s='[ -f sail ] && sh sail || sh vendor/bin/sail'
-alias am="php artisan migrate:fresh --seed"
-alias sam="./vendor/bin/sail artisan migrate:fresh --seed"
-alias alm="php artisan livewire:make"
-alias alf="php artisan livewire:form"
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+alias sa="[ -f sail ] && sh sail || sh vendor/bin/sail artisan"
+alias sam="[ -f sail ] && sh sail || sh vendor/bin/sail artisan migrate:fresh --seed"
+alias sao="[ -f sail ] && sh sail || sh vendor/bin/sail artisan optimize"
+alias saoc="[ -f sail ] && sh sail || sh vendor/bin/sail artisan optimize:clear"
 
 alias ll="eza -a --icons --tree --level=1 --git --long"
 alias ls="eza -a --icons"
 alias cat='bat'
 
 alias lg="lazygit"
+alias lsq="lazysql"
 alias ld="lazydocker"
+
 alias yadm="cd $HOME && yadm"
 alias ylg="yadm enter lazygit"
 
@@ -28,12 +29,14 @@ alias dss="sudo systemctl start docker"
 alias dst="sudo systemctl stop docker"
 
 alias dc="docker-compose"
+alias d="docker"
 
 alias pi="pnpm install"
 alias prd="pnpm run dev"
 
 alias v="nvim"
 alias gone="~/.scripts/git-delete-untracked-branches.sh"
+alias nah="git reset --hard && git clean -df"
 alias zoraxy="sudo ~/zoraxy/src/zoraxy --port=:8001"
 alias sshk="kitten ssh"
 alias pokemon="pokemon-colorscripts --no-title -r 1,3,6"
