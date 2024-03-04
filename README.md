@@ -1,7 +1,5 @@
 # [Aquila's](https://github.com/rizkyilhampra) Dotfiles v2
-What is the different between dotfiles v1? The ecosystem. The dotfiles v2 is aquila's working configuration in linux (currenty, "I use Arch BTW") and has more complex configuration written so far. Beside, the dotfiles v1 has minimal configuration written in Windows with Ubuntu WSL. 
-
-## Main Packages
+## Main Packages (i remember)
 
 | Package | Description |
 | --- | --- |
