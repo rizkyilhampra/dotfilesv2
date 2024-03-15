@@ -132,9 +132,10 @@ export PATH="$PATH:/home/aquila/.local/bin"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+#go
 export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 
-source ~/gh-fzf/ghf.bash
+export GPG_TTY=$(tty)
 
 eval "$(starship init zsh)"
 pfetch
