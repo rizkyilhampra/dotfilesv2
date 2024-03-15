@@ -1,11 +1,12 @@
 # [Aquila's](https://github.com/rizkyilhampra) Dotfiles v2
-## Main Packages (i remember)
+Working on progress to make nicer README
 
+## Main Packages (i was remember)
 | Package | Description |
 | --- | --- |
 | [kitty](https://sw.kovidgoyal.net/kitty/) | Terminal |
 | [hyprland](https://sw.kovidgoyal.net/kitty/) | Window Manager Wayland |
-| [zsh](https://zsh.sourceforge.io/) [Starship](https://starship.rs) | Shell & Prompt Styling |      
+| [zsh](https://zsh.sourceforge.io/) [starship](https://starship.rs) | Shell & Prompt Styling |      
 | [tmux](https://github.com/tmux/tmux/wiki) | Multiplexer |
 | [spicetify](https://spicetify.app/) | Customization for Spotify |
 | [comfy](https://github.com/Comfy-Themes/Spicetify) | Spicetify Theme |
