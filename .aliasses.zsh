@@ -48,3 +48,6 @@ alias pokemon="pokemon-colorscripts --no-title -r 1,3,6"
 
 # Pass aliases through sudo
 alias sudo='sudo '
+
+alias sshconfig="cat ~/.ssh/config"
+alias nvimbak="~/.scripts/nvimbak.sh"
