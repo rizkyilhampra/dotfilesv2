@@ -1,5 +1,9 @@
 # [Aquila's](https://github.com/rizkyilhampra) Dotfiles v2
-Working on progress to make nicer README
+
+> [!NOTE] 
+> Working on progress to make nicer README
+
+Contain all of my configuration in Arch Linux (btw) + Hyprland WM.
 
 ## Main Packages (i was remember)
 | Package | Description |
