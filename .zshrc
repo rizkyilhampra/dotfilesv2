@@ -135,6 +135,13 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 #go
 export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 
+#ruby
+export GEM_HOME="$(gem env user_gemhome)"
+export PATH="$PATH:$GEM_HOME/bin"
+
+#php development
+export XDEBUG_MODE="coverage"
+
 export GPG_TTY=$(tty)
 
 eval "$(starship init zsh)"
