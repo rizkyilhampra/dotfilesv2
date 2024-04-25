@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 function get_brightness {
     brightnessctl -m | grep -o '[0-9]\+%' | head -c-2
