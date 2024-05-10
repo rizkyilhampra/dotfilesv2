@@ -14,16 +14,30 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
-alias a="php artisan"
-alias am="php artisan migrate:fresh --seed"
-alias ao="php artisan optimize"
-alias aoc="php artisan optimize:clear"
-alias s='[ -f sail ] && sh sail || sh vendor/bin/sail'
-alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
-alias sa="[ -f sail ] && sh sail || sh vendor/bin/sail artisan"
-alias sam="[ -f sail ] && sh sail || sh vendor/bin/sail artisan migrate:fresh --seed"
-alias sao="[ -f sail ] && sh sail || sh vendor/bin/sail artisan optimize"
-alias saoc="[ -f sail ] && sh sail || sh vendor/bin/sail artisan optimize:clear"
+
+artisan() {
+    if [ -f docker-compose.yml ]; then
+        case "$1" in
+            "serve")
+                sh vendor/bin/sail up -d
+                ;;
+            "down")
+                sh vendor/bin/sail down
+                ;;
+            *)
+                sh vendor/bin/sail artisan "$@"
+                ;;
+        esac
+    else
+        php artisan "$@"
+    fi
+}
+alias a='artisan'
+alias am='artisan migrate:fresh --seed'
+alias aoc='artisan optimize:clear'
+alias serve='artisan serve'
+alias down='artisan down'
+alias tinker='artisan tinker'
 
 alias ll="eza -a --icons --tree --level=1 --git --long"
 alias ls="eza -a --icons"
@@ -57,6 +71,7 @@ alias sudo='sudo '
 
 alias sshconfig="cat ~/.ssh/config"
 alias nvimbak="~/.scripts/nvimbak.sh"
+alias normalnv="NVIM_APPNAME=normalnvim nvim"
 
 # User configuration
 eval "$(fnm env --use-on-cd)"
