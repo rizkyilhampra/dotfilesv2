@@ -47,3 +47,5 @@ export PATH="$PATH:$GEM_HOME/bin"
 export XDEBUG_MODE="coverage"
 
 export GPG_TTY=$(tty)
+
+export PATH="$HOME/.symfony5/bin:$PATH"
