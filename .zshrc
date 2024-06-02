@@ -14,30 +14,20 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
-
-artisan() {
-    if [ -f docker-compose.yml ]; then
-        case "$1" in
-            "serve")
-                sh vendor/bin/sail up -d
-                ;;
-            "down")
-                sh vendor/bin/sail down
-                ;;
-            *)
-                sh vendor/bin/sail artisan "$@"
-                ;;
-        esac
-    else
-        php artisan "$@"
-    fi
-}
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+alias s='sail'
+alias artisan='php artisan'
 alias a='artisan'
+alias sa='sail artisan'
 alias am='artisan migrate:fresh --seed'
+alias sam='sail artisan migrate:fresh --seed'
 alias aoc='artisan optimize:clear'
+alias saoc='sail artisan optimize:clear'
 alias serve='artisan serve'
-alias down='artisan down'
+alias up='sail up -d'
+alias down='sail down'
 alias tinker='artisan tinker'
+alias stan="vendor/bin/phpstan"
 
 alias ll="eza -a --icons --tree --level=1 --git --long"
 alias ls="eza -a --icons"
@@ -57,8 +47,10 @@ alias dc="docker-compose"
 alias d="docker"
 alias dockclean="~/.scripts/docker-clean-operation.sh"
 
+alias p="pnpm"
 alias pi="pnpm install"
 alias prd="pnpm run dev"
+alias prb="pnpm run build"
 
 alias nv="nvim"
 alias gone="~/.scripts/git-delete-untracked-branches.sh"
@@ -66,16 +58,19 @@ alias nah="git reset --hard && git clean -df"
 alias sshk="kitten ssh"
 alias pokemon="pokemon-colorscripts --no-title -r 1,3,6"
 
-# Pass aliases through sudo
-alias sudo='sudo '
+alias sudo='sudo ' # Pass aliases through sudo
 
 alias sshconfig="cat ~/.ssh/config"
 alias nvimbak="~/.scripts/nvimbak.sh"
 alias normalnv="NVIM_APPNAME=normalnvim nvim"
+alias rnv="NVIM_APPNAME=rnvim nvim"
 
 # User configuration
 eval "$(fnm env --use-on-cd)"
 eval "$(zoxide init zsh --cmd j)"
 eval "$(starship init zsh)"
+
+# bun completions
+[ -s "/home/aquila/.bun/_bun" ] && source "/home/aquila/.bun/_bun"
 
 pfetch
