@@ -8,11 +8,11 @@ plugins=(
     web-search 
     zsh-syntax-highlighting
     you-should-use
+    zsh-autocomplete
 )
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-syntax-highlighting/themes/catppuccin_mocha-zsh-syntax-highlighting.zsh
-source ~/.zsh/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 
 zstyle ':completion:*' completer _expand_alias _complete _ignored
 
