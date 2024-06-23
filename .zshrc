@@ -77,6 +77,7 @@ alias rnv="NVIM_APPNAME=rnvim nvim"
 eval "$(fnm env --use-on-cd)"
 eval "$(zoxide init zsh --cmd j)"
 eval "$(starship init zsh)"
+eval "$(batman --export-env)"
 
 # bun completions
 [ -s "/home/aquila/.bun/_bun" ] && source "/home/aquila/.bun/_bun"
