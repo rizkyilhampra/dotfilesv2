@@ -21,3 +21,11 @@ Contain all of my configuration in Arch Linux (btw) + Hyprland WM.
 | [catppuccin](https://github.com/catppuccin/catppuccin) | Primary Theme i use at terminal, tmux, Chrome, etc |
 | [swww](https://github.com/LGFae/swww) | Wallpaper daemon |
 | [waybar](https://github.com/Alexays/Waybar) | Bar |
+
+## Todo
+- [ ] Add Screenshot
+- [ ] Improve speed of shell startup when open terminal
+    <br>
+    One of the following:
+    - [ ] Do refactor on ZSH configuration | Move another framework instead OMZ
+    - [ ] Use another shell (maybe fish)
