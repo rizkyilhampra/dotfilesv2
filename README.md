@@ -22,6 +22,9 @@ Contain all of my configuration in Arch Linux (btw) + Hyprland WM.
 | [swww](https://github.com/LGFae/swww) | Wallpaper daemon |
 | [waybar](https://github.com/Alexays/Waybar) | Bar |
 
+## Other Packages (Dependencies)
+mcp mpd ncmpcpp
+
 ## Todo
 - [ ] Add Screenshot
 - [ ] Improve speed of shell startup when open terminal
@@ -29,3 +32,4 @@ Contain all of my configuration in Arch Linux (btw) + Hyprland WM.
     One of the following:
     - [ ] Do refactor on ZSH configuration | Move another framework instead OMZ
     - [ ] Use another shell (maybe fish)
+- [ ] Configure mpd with ncmpcpp for music player
