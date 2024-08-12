@@ -5,8 +5,8 @@
 
 Contain all of my configuration in Arch Linux (btw) + Hyprland WM.
 
-## Main Packages (i was remember)
-| Package | Description |
+## Stuffs (i was remember)
+| Stuff | Description |
 | --- | --- |
 | [kitty](https://sw.kovidgoyal.net/kitty/) | Terminal |
 | [hyprland](https://sw.kovidgoyal.net/kitty/) | Window Manager Wayland |
@@ -21,9 +21,10 @@ Contain all of my configuration in Arch Linux (btw) + Hyprland WM.
 | [catppuccin](https://github.com/catppuccin/catppuccin) | Primary Theme i use at terminal, tmux, Chrome, etc |
 | [swww](https://github.com/LGFae/swww) | Wallpaper daemon |
 | [waybar](https://github.com/Alexays/Waybar) | Bar |
-
-## Other Packages (Dependencies)
-mcp mpd ncmpcpp
+| [age](https://github.com/FiloSottile/age) | Encryption |
+| [rmpc](https://github.com/mierak/rmpc) | MPD client like [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) but with display album art support out of the box |
+| [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) | MPD client |
+| [mpd](https://github.com/MusicPlayerDaemon/MPD) | Music Player Daemon |
 
 ## Todo
 - [ ] Add Screenshot
