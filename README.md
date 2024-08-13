@@ -5,8 +5,8 @@
 
 Contain all of my configuration in Arch Linux (btw) + Hyprland WM.
 
-## Stuffs (i was remember)
-| Stuff | Description |
+## Tools & Applications
+| Name | Description |
 | --- | --- |
 | [kitty](https://sw.kovidgoyal.net/kitty/) | Terminal |
 | [hyprland](https://sw.kovidgoyal.net/kitty/) | Window Manager Wayland |
@@ -17,7 +17,7 @@ Contain all of my configuration in Arch Linux (btw) + Hyprland WM.
 | [eza](https://github.com/eza-community/eza) | Another LS Command Replacement |
 | [zoxide](https://github.com/ajeetdsouza/zoxide) | Another CD Command Replacement |
 | [t-smart-tmux-session-manager](https://github.com/joshmedeski/t-smart-tmux-session-manager) | Zoxide + Tmux for session manager |
-| [monaspace](https://monaspace.githubnext.com/) | Font |
+| [monaspace](https://monaspace.githubnext.com/) [geistmono](https://github.com/vercel/geist-font) [jetbrains-mono](https://github.com/JetBrains/JetBrainsMono) [iosevka](https://github.com/be5invis/Iosevka) | Font installed and some other i used |
 | [catppuccin](https://github.com/catppuccin/catppuccin) | Primary Theme i use at terminal, tmux, Chrome, etc |
 | [swww](https://github.com/LGFae/swww) | Wallpaper daemon |
 | [waybar](https://github.com/Alexays/Waybar) | Bar |
@@ -25,6 +25,7 @@ Contain all of my configuration in Arch Linux (btw) + Hyprland WM.
 | [rmpc](https://github.com/mierak/rmpc) | MPD client like [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) but with display album art support out of the box |
 | [ncmpcpp](https://github.com/ncmpcpp/ncmpcpp) | MPD client |
 | [mpd](https://github.com/MusicPlayerDaemon/MPD) | Music Player Daemon |
+| [yay](https://github.com/Jguer/yay) | Pacman Wrapper |
 
 ## Todo
 - [ ] Add Screenshot
